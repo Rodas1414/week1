@@ -1,0 +1,178 @@
+/*Styles my Tigray page*/
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: url("../images/Tigray_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Times New Roman", Times, serif;
+  }
+  #wrapper {
+    /* width: 940px; */
+    width:80%;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    background-color: rgb(246, 243, 216,.7);
+  }
+  nav {
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(225, 219, 177);
+  }
+  nav li {
+    list-style-type: none;
+    float: left;
+    width: 50%;
+    text-align: center;
+    color:black
+  }
+  nav a {
+    text-decoration: none;
+    display: block;
+    color:black;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(77, 33, 2);
+    font-style: oblique;
+  }
+  nav a:hover {
+    background-color: rgb(173, 215, 231);
+  }
+  main {
+    float: left;
+    /* width: 560px; */
+    width:59.57%;
+    height: auto;
+    margin-top: 15px;
+  }
+  
+  .flag {
+    width: 120px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline;
+  }
+  .home_tigray {
+    float: right;
+    width: 250px;
+    margin-left: 30px;
+    margin-top: 5px
+  }
+  .big_tigray {
+    width: 700px;
+    margin: 20px auto;
+    display: block;
+  }
+  .ashenda {
+    width: 150px;
+    float: left;
+    margin-top: 10px;
+    padding-left: 15px;
+    margin-right: 15px;
+  }
+  .axum {
+    height: 200px;
+    margin-top: 20px;
+  }
+  aside {
+    float: right;
+    /* width: 360px; */
+    width: 39.30%;
+    height: auto;
+    text-align: center;
+    margin-top: 15px;
+  }
+  h1{
+      font-size: 45px;
+      color:rgb(138, 59, 16);
+      text-shadow: 2px 2px 2px black;
+  }
+  h2{
+      font-size: 25px;
+      color:rgb(168, 83, 49);
+      text-shadow: 1px 1px 1px beige;
+  }
+  h1,
+  h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  p {
+    line-height: 1.3;
+    margin-left: 5px;
+  }
+  figure {
+    font-style: italic;
+  }
+  footer {
+    height: 50px;
+    clear: both;
+    border-top: 2px double rgb(187, 152, 38);
+    background-color:rgb(225, 219, 177);
+  }
+  footer li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    width: 20%;
+    margin-top: 15px;
+    font-size: 17px;
+  }
+  @media  screen  and (max-width:900px){
+    #wrapper {
+          /* width: 940px; */
+      width:90%;
+      max-width: 1000px;
+    }
+    aside {
+      float: right;
+      width: 41.30%;
+    }
+    main {
+      float: left;
+      width: 56.57%;
+    }
+    .big_tigray {
+      width: 500px;
+      margin: 20px auto;
+      display: block;
+    }
+    footer {
+      height: 65px;
+      clear: both;
+      border-top: 2px double rgb(187, 152, 38);
+      background-color:rgb(225, 219, 177);
+    }
+    .axum {
+      height: 200px;
+      margin-top: 20px;
+      width:200px
+    }
+  }
+  
+  @media  screen  and (max-width:420px){
+  
+    main {
+      float: none;
+      width: auto;
+    }
+    aside {
+      border:1px solid black;
+      float: none;
+      width: auto;
+    }
+  .big_tigray {
+    width: 350px;
+    margin: 20px auto;
+    display: block;
+  }
+  footer {
+    height: 75px;
+    clear: both;
+    border-top: 2px double rgb(187, 152, 38);
+    background-color:rgb(225, 219, 177);
+  }
+  }

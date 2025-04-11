@@ -1,0 +1,101 @@
+/*styles for the Metropolitan Opera 2 page website*/
+
+
+
+*{
+    padding :0;
+    margin:0;
+}
+body{
+    background:cyan;
+    font-family:'lucide Sans','Lucida Sans Regular','Lucide Grande','Lucide Sans Unicode','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image:url(../images/tigraybackground.jpg);
+    background-attachment:fixed;
+}
+
+
+
+ div#wrapper {
+    width:940px;
+    background:rgb(244, 244, 238);
+    padding:20px;
+    margin:20px auto;
+    overflow:hidden;
+} 
+header {
+   
+    margin-bottom:20px;
+    
+}
+nav{
+    margin:0auto;
+    background:#06183d;
+    padding:1px;
+    clear:both;
+    margin-bottom:20px;
+}
+nav ul{
+    list-style:none;
+    text-align:left;
+}
+nav ul li{
+    display:inline block;
+
+}
+
+footer{
+    height:50px ;
+    line-height:50px;
+    background:tan;
+    clear:both;
+    font-size:.9em;
+}
+footer ul{
+    margin-left:20px;
+}
+footer li{
+    list-style-type:none;
+    float:left;
+    margin-right:30px;
+    color:brown;
+}
+a{
+    color:brown;
+}
+img.right {
+    float:right;
+    margin-left:30px;
+    margin-bottom:10px;
+}
+
+img.left{
+   float:left;
+    margin-right:30px;
+    margin-bottom:10px;
+}
+.center{
+    margin:20px auto;
+    display:block;
+    text-align: center;
+}
+h1{
+    font-size: 1.5em;
+}
+h2{
+    font-size: 1.8em;
+
+}
+h1, h2{
+    margin-bottom:8px;
+    font-family:Georgia,'Times New ''Times New Roman', Times, serif;
+    color:brown;
+}   
+main{
+    width:750px;
+    margin-bottom:20px;
+    margin-top:30px;
+}
+p{
+    margin-bottom:20px;
+    line-height:1.4;
+}

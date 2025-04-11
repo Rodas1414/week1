@@ -1,0 +1,5 @@
+CREATE VIEW TopRatedMovies AS
+SELECT *
+FROM Movie
+ORDER BY Rating DESC
+LIMIT 5;

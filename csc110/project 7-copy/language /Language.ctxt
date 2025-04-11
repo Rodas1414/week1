@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Language
+comment0.text=\n\ Represents\ a\ programming\ language\ with\ associated\ properties\ and\ keywords.\n
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment2.params=
+comment2.target=java.lang.String\ getFilename()
+comment3.params=
+comment3.target=int\ getKwdCount()
+comment4.params=index
+comment4.target=java.lang.String\ getKwd(int)
+comment5.params=keyword
+comment5.target=int\ findKwd(java.lang.String)
+comment6.params=
+comment6.target=int\ findShortestKwdLength()
+comment7.params=
+comment7.target=int\ findLongestKwdLength()
+comment8.params=
+comment8.target=void\ sortKwds()
+comment9.params=keyword
+comment9.target=void\ addKeyword(java.lang.String)
+comment9.text=\n\ Adds\ a\ keyword\ to\ the\ array.\n\ \n\ @param\ keyword\ the\ keyword\ to\ add.\n\ @throws\ IllegalArgumentException\ if\ keyword\ is\ null\ or\ empty.\n\ @throws\ IllegalStateException\ \ \ \ if\ the\ keyword\ array\ is\ full.\n
+numComments=10

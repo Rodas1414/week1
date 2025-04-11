@@ -1,0 +1,7 @@
+Data for river: Brazos River
+Data for month: 2
+Data for pollutant: 4
+Number of readings 10
+Average of readings 0.134
+Lowest reading 0.049
+Highest reading 0.210

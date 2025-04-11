@@ -1,0 +1,7 @@
+Data for river: Brazos river
+Data for month: 2
+Data for pollutant: Pesticides
+Number of readings 0
+Average of readings 0.000
+Lowest reading inf
+Highest reading -inf

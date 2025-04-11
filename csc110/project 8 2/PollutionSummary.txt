@@ -1,0 +1,8 @@
+with open('PollutionSummary.txt', 'w') as summary_file:
+    summary_file.write(f"Data for river: {river_name}\n")
+    summary_file.write(f"Data for month: {month}\n")
+    summary_file.write(f"Data for pollutant: {pollutant_choice}\n")
+    summary_file.write(f"Number of readings {total_readings}\n")
+    summary_file.write(f"Average of readings {average_reading:.3f}\n")
+    summary_file.write(f"Lowest reading {min_reading:.3f}\n")
+    summary_file.write(f"Highest reading {max_reading:.3f}\n")

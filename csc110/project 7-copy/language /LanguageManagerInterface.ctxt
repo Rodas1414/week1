@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=LanguageManagerInterface
+comment0.text=\n\ Required\ methods\ and\ enums\ for\ the\ LanguageManager\ class\n\ @author\ \ \ \ \ \ Bill\ Barry\n\ @version\ \ \ \ \ 2023-06-24\n
+comment1.params=
+comment1.target=int\ getLanguageCount()
+comment1.text=\n\ Returns\ the\ number\ of\ languages\ currently\ managed\n\ @return\ \ \ \ \ \ number\ of\ languages\n
+comment2.params=
+comment2.target=int\ findShortestKwdLength()
+comment2.text=\n\ Across\ languages,\ finds\ and\ returns\ the\ length\ of\ the\ shortest\ keyword.\ \ Ignores\ languages\ with\ no\ keywords.\n\ @return\ \ \ \ \ \ the\ length\ of\ the\ shortest\ keyword\n
+comment3.params=
+comment3.target=int\ findLongestKwdLength()
+comment3.text=\n\ Across\ languages,\ finds\ and\ returns\ the\ length\ of\ the\ longest\ keyword.\ \ Ignores\ languages\ with\ no\ keywords.\n\ @return\ \ \ \ \ \ the\ length\ of\ the\ longest\ keyword\n
+comment4.params=
+comment4.target=int\ findLangWithFewestKwds()
+comment4.text=\n\ Across\ languages,\ find\ the\ language\ with\ the\ fewest\ keywords\ and\ returns\ its\ position.\n\ Ignores\ languages\ with\ no\ keywords.\ \ Returns\ -1\ if\ there\ are\ no\ languages\ with\ keywords.\n\ @return\ \ \ \ \ \ the\ position\ of\ the\ language\ with\ the\ fewest\ keywords\n
+comment5.params=
+comment5.target=int\ findLangWithMostKwds()
+comment5.text=\n\ Across\ languages,\ find\ the\ language\ with\ the\ most\ keywords\ and\ returns\ its\ position.\n\ Ignores\ languages\ with\ no\ keywords.\ \ Returns\ -1\ if\ there\ are\ no\ languages\ with\ keywords.\n\ @return\ \ \ \ \ \ the\ position\ of\ the\ language\ with\ the\ most\ keywords\n
+comment6.params=keyword
+comment6.target=int[]\ findLangKwdMatches(java.lang.String)
+comment6.text=\n\ Looks\ for\ the\ specified\ keyword\ across\ all\ languages\ and\ returns\ an\ array\ of\ the\ positions\ of\ those\ languages.\n\ Does\ not\ use\ an\ ArrayList\ or\ other\ data\ structure\ in\ the\ process.\n\ @param\ keyword\ \ \ \ \ \ \ keyword\ to\ search\ for\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ array\ of\ indexes\ of\ (only)\ the\ languages\ that\ contain\ that\ keyword,\ a\ "right-sized"\ array\n
+comment7.params=
+comment7.target=void\ sortLangs()
+comment7.text=\n\ Sorts\ the\ languages\ alphabetically\ (case-sensitive).\ \ Implements\ an\ Insertion\ Sort\ adapted\ from\ the\n\ \ \ \ \ \ code\ given\ in\ class\ (see\ slides\ on\ Sorting).\n
+numComments=8

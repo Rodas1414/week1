@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=MusicTrack
+comment1.params=artist\ title
+comment1.target=MusicTrack(java.lang.String,\ java.lang.String)
+comment10.params=args
+comment10.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=java.lang.String\ getArtist()
+comment3.params=artist
+comment3.target=void\ setArtist(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getTitle()
+comment5.params=title
+comment5.target=void\ setTitle(java.lang.String)
+comment6.params=
+comment6.target=int\ getTrackOrder()
+comment7.params=trackOrder
+comment7.target=void\ setTrackOrder(int)
+comment8.params=other
+comment8.target=int\ compareTo(MusicTrack)
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=11

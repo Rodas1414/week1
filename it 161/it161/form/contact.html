@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Homework</title>
+        <link href="css/styles.css" type="text/css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="wrapper">
+        <header>    
+            <img src="images/logo.jpg" alt="logo">      
+            <h1>contact as Today!</h1>
+        </header>  
+        <main>
+        <form action="formhandler.php" method="post">
+            <fieldset>
+                <legend>Contact Rodas</legend>
+                <label>Name</label>
+                <input type="text" name="name">
+                <label>Email</label>
+                <input type="email" name="email">
+               
+                <label>Gender</label>
+                <ul>
+                <li><input type="radio" name="gender" value="female">Female</li>
+                <li><input type="radio" name="gender" value="male">Male</li>
+                <li><input type="radio" name="gender" value="other">Other</li>
+                </ul>
+            
+            
+                <label>Favorite wines  </label>
+                <ul>
+                <li><input type="checkbox" name="wines[]" value="cabernet ">Cabernet</li>
+                <li><input type="checkbox" name="wines[]" value="merlot ">Merlot</li>
+                <li><input type="checkbox" name="wines[]" value="malbec ">Malbec</li>
+                <li><input type="checkbox" name="wines[]" value="syrah">Syrah</li>
+                
+                </ul>
+
+                <label>Regions</label>
+                <select name="regions">
+                    <option value="">Select one </option>
+                    <option value="nw">Northwest</option>
+                    <option value="sw">Southwest</option>    
+                    <option value="mw">Midwest</option> 
+                    <option value="so">South</option> 
+                    <option value="ne ">Northeast</option>   
+                </select>
+            
+             
+                <label>Comments</label>
+                <textarea name="comments"></textarea>
+                <input type="submit" value="Order it!!">
+                <p><a href="">Reset</a></p>
+            </fieldset>
+        </form>
+        </main>
+        <aside>
+            <h3> This is my wonderful aside </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque maximus enim ante, in malesuada 
+                risus bibendum ac.Phasellus aliquet congue tellus. Nunc fringilla, lectus sit amet porta porttitor, neque eros consectetur augue,
+                 et aliquet sem ante eget felis.</p>
+                 
+            <img src="images/barrels.jpg" alt="favorite_wine">
+        </aside>
+        <footer>
+            <ul>
+              <li>Copyright &copy; 2024</li>
+              <li>All Rights Reserved</li>
+              <li>Terms of Use</li>
+              <li><a href="../index.html">Web Design by Rodas</a></li>
+              <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnorth.mystudentswa.com%2Frodasge%2Fit161%2Fform%2Fcontact.html">VALID!!</a></li>
+            </ul>
+          </footer>
+    </div>  
+    <script>
+       
+    </script>
+    </body>
+</html>

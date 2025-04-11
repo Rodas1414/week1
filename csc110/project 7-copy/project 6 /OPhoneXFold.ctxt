@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=OPhoneXFold
+comment1.params=
+comment1.target=double\ getPrice()
+comment2.params=
+comment2.target=java.lang.String\ getScreenSize()
+comment3.params=
+comment3.target=java.lang.String\ getVideoResolution()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
