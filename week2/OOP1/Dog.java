@@ -1,4 +1,4 @@
-package OOP1;
+package week2.OOP1;
 
 public class Dog {
     static String latinName = "Canis lupus familiaris";

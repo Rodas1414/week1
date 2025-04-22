@@ -1,4 +1,4 @@
-package OOP2;
+package week2.OOP2;
 
 public class Car {
     static String latinName = "autocinetum";

@@ -1,4 +1,4 @@
-package OOP1;
+package week2.OOP1;
 
 public class Cat {
     static String latinName = "Felis catus";
