@@ -1,4 +1,4 @@
-package Soccer;
+package week5.Soccer;
 
 public class Player {
     private String name;

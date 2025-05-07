@@ -1,4 +1,4 @@
-package Soccer;
+package week5.Soccer;
 
 import java.util.ArrayList;
 import java.util.List;
