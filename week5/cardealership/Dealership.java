@@ -7,49 +7,120 @@ public class Dealership {
     private String name;
     private String address;
     private String phone;
-    private List<Vehicle> inventory;
+
+    private List<Vehicle> inventory = new ArrayList<>();
 
     public Dealership(String name, String address, String phone) {
         this.name = name;
         this.address = address;
         this.phone = phone;
-        this.inventory = new ArrayList<>();
     }
 
-    // Add a vehicle to the dealership's inventory
-    public void addVehicle(Vehicle v) {
-        inventory.add(v);
-    }
-
-    // Remove a vehicle from the dealership's inventory
-    public void removeVehicle(Vehicle v) {
-        inventory.remove(v);
-    }
-
-    // Get all vehicles from the dealership's inventory
-    public List<Vehicle> getAllVehicles() {
-        return inventory;
-    }
-
-    // Set the inventory list directly
-    public void setInventory(List<Vehicle> inventory) {
-        this.inventory = inventory;
-    }
-
-    // Get the dealership name
     public String getName() {
         return name;
     }
 
-    // Get the dealership phone number
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public String getPhone() {
         return phone;
     }
 
-    // Get the dealership address
-    public String getAddress() {
-        return address;  // Added getter for address
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    // Additional getter and setter methods for other fields can be added if needed
+    public List<Vehicle> getInventory() {
+        return inventory;
+    }
+
+
+    public List<Vehicle> getVehiclesByPrice(double min, double max) {
+        List<Vehicle> matchingVehicles = new ArrayList<>();
+        for(Vehicle vehicle : inventory) {
+            if(vehicle.getPrice() <= max && vehicle.getPrice() >= min) {
+                matchingVehicles.add(vehicle);
+            }
+        }
+        return matchingVehicles;
+    }
+
+    public List<Vehicle> getVehiclesByMakeModel(String make, String model) {
+        List<Vehicle> matchingVehicles = new ArrayList<>();
+        for(Vehicle vehicle : inventory) {
+            if(vehicle.getMake().equalsIgnoreCase(make) && vehicle.getModel().equalsIgnoreCase(model)) {
+                matchingVehicles.add(vehicle);
+            }
+        }
+        return matchingVehicles;
+    }
+
+    public List<Vehicle> getVehiclesByYear(double min, double max) {
+        List<Vehicle> matchingVehicles = new ArrayList<>();
+        for(Vehicle vehicle : inventory) {
+            if(vehicle.getYear() <= max && vehicle.getYear() >= min) {
+                matchingVehicles.add(vehicle);
+            }
+        }
+        return matchingVehicles;
+    }
+
+    public List<Vehicle> getVehiclesByColor(String color) {
+        List<Vehicle> matchingVehicles = new ArrayList<>();
+        for(Vehicle vehicle : inventory) {
+            if(vehicle.getColor().equalsIgnoreCase(color)) {
+                matchingVehicles.add(vehicle);
+            }
+        }
+        return matchingVehicles;
+    }
+
+    public List<Vehicle> getVehiclesByMileage(double min, double max) {
+        List<Vehicle> matchingVehicles = new ArrayList<>();
+        for(Vehicle vehicle : inventory) {
+            if(vehicle.getOdometer() <= max && vehicle.getOdometer() >= min) {
+                matchingVehicles.add(vehicle);
+            }
+        }
+        return matchingVehicles;
+    }
+
+    public List<Vehicle> getVehiclesByType(String type) {
+        List<Vehicle> matchingVehicles = new ArrayList<>();
+        for(Vehicle vehicle : inventory) {
+            if(vehicle.getVehicleType().equalsIgnoreCase(type)) {
+                matchingVehicles.add(vehicle);
+            }
+        }
+        return matchingVehicles;
+    }
+
+    public List<Vehicle> getAllVehicles() {
+        return inventory;
+    }
+
+    public void addVehicle(Vehicle vehicle) {
+        inventory.add(vehicle);
+        DealershipFileManager.saveDealership(this);
+    }
+
+    public void removeVehicle(Vehicle vehicle) {
+        inventory.remove(vehicle);
+        DealershipFileManager.saveDealership(this);
+    }
+
+    public String toFileString() {
+        return name + "|" + address + "|" + phone;
+    }
+
 }
